@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Test';
+  src: local('Test'), url(./fonts/test.woff) format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /* font-family: Test, serif; */
+  font-family: 'Work Sans', sans-serif;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.01em;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  font-size: 12px;
+  margin: 8px 0px 16px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 16px 0px 8px;
+}
+
+.container {
+  width: 80%;
+  min-width: 1024px;
+  max-width: 1800px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.width25 {
+  width: 25%;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.width75 {
+  width: 75%;
+}
+
+.width100 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 599px) {
+  .container {
+    width: 100%;
+    min-width: 0px;
+  }
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .container {
+    width: 100%;
+    min-width: 0px;
+  }
 }
