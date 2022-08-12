@@ -43,13 +43,11 @@ function App() {
     <div>
 
       <Container bgcolor="black">
-        <div className="container">
           <Project
-            color="white"
+            color="#f5f5f5"
             bgcolor="black"
-            title="Lorum Ipsum"
-            type="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget purus ac felis commodo rutrum. Etiam varius eros mattis lectus congue elementum.elementum" />
-        </div>
+            title="Practise"
+            type="Practising minimalism in the designer zone" />
       </Container>
 
       <Container bgcolor="#DFD2D2">
