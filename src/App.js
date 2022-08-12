@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import styled from 'styled-components';
 import Project from './component/Project';
@@ -6,6 +5,9 @@ import type1 from './img/type-1.jpg';
 import type2 from './img/type-2.jpg';
 import type3 from './img/type-3.jpg';
 import type4 from './img/type-4.jpg';
+import p1 from './img/p01.webp';
+import p2 from './img/p02.webp';
+import Blk1 from './component/Blk1';
 import 'photoswipe/dist/photoswipe.css'
 import 'photoswipe/dist/default-skin/default-skin.css'
 
@@ -20,7 +22,9 @@ function App() {
     type1, 
     type2, 
     type3, 
-    type4
+    type4,
+    p1,
+    p2
   ]
 
   const images2 = [
@@ -41,7 +45,7 @@ function App() {
 
   return (
     <div>
-
+   <Blk1 />
       <Container bgcolor="black">
           <Project
             color="#f5f5f5"
